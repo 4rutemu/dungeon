@@ -106,7 +106,8 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={"center"}
-                maxWidth={"15%"}
+                width={"15%"}
+                justifyContent={"space-between"}
                 borderRadius={"20px"}
                 sx={{backgroundColor: "gray"}}
                 padding={"10px 5px 5px 5px"}
@@ -126,6 +127,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     borderRadius={"20px"}
                     sx={{backgroundColor: "gray"}}
                     padding={"10px 5px 5px 5px"}
+                    marginBottom={"7px"}
                 >
                     <FormControlLabel label="Вдохновение" sx={{marginLeft: "7px"}} control={
                         <Checkbox color="default" id="vdohnovenie"></Checkbox>
@@ -147,11 +149,38 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
                     <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
                     <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
                     <Typography variant="body2">Спасброски</Typography>
                 </Box>
-                <Box>
-
+            </Box>
+            <Box marginLeft={"7px"}>
+                <Box 
+                    display={"flex"}
+                    flexDirection={"column"}
+                    alignItems={"center"}
+                    borderRadius={"20px"}
+                    width={"140px"}
+                    sx={{backgroundColor: "gray"}}
+                    padding={"10px 5px 5px 5px"}
+                >
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <Typography variant="body2">Навыки</Typography>
                 </Box>
             </Box>
         </Box>
