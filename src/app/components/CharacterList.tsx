@@ -55,6 +55,47 @@ const SpecialisationCard: FunctionComponent<SpecialisationCardProps> = ({label, 
         </>
      );
 }
+
+interface HealthCardProps {
+    
+}
+ 
+const HealthCard: FunctionComponent<HealthCardProps> = () => {
+    return ( 
+        <Box
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={"center"}
+        width={"400px"}
+        borderRadius={"20px"}
+        sx={{backgroundColor: "gray"}}
+        padding={"10px 5px 10px 5px"}
+        >
+            <Box
+                display={"flex"}
+                alignItems={"center"}
+                sx={{backgroundColor: "white"}}
+                borderRadius={"20px"}
+                marginBottom={"7px"}
+                padding={"7px"}
+            >
+                <TextField label={"КЗ"} />
+                <TextField label={"Инициатива"} />
+                <TextField label={"Скорость"} />
+            </Box>
+            <Box
+                display={"flex"}
+                alignItems={"center"}
+                sx={{backgroundColor: "white"}}
+                borderRadius={"20px"}
+                padding={"7px"}
+            >
+                <TextField label={"Текущие хиты"} />
+                <TextField label={"Кости хитов"} />
+            </Box>
+        </Box>
+     );
+}
  
 const CharacterList: FunctionComponent<CharacterListProps> = () => {
     return ( <Box padding={"0 20%"}>
@@ -101,7 +142,10 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
             </Box>
         </Box>
         {/* Статки */}
-        <Box padding={"15px"} display={"flex"}>
+        <Box padding={"15px"}
+        display={"flex"}
+        justifyContent={"left"}
+        >
             <Box
                 display={"flex"}
                 flexDirection={"column"}
@@ -125,6 +169,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     flexDirection={"column"}
                     alignItems={"center"}
                     borderRadius={"20px"}
+                    width={"140px"}
                     sx={{backgroundColor: "gray"}}
                     padding={"10px 5px 5px 5px"}
                     marginBottom={"7px"}
@@ -140,6 +185,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     flexDirection={"column"}
                     alignItems={"center"}
                     borderRadius={"20px"}
+                    width={"140px"}
                     sx={{backgroundColor: "gray"}}
                     padding={"10px 5px 5px 5px"}
                 >
@@ -182,6 +228,36 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
                     <Typography variant="body2">Навыки</Typography>
                 </Box>
+            </Box>
+            <Box marginLeft={"7px"}
+            display={"flex"}
+            flexDirection={"column"}
+            alignItems={"center"}
+            borderRadius={"20px"}
+            sx={{backgroundColor: "gray"}}
+            padding={"0px 5px 5px 5px"}
+            >
+                    <HealthCard/>
+                    <Box 
+                        display={"flex"}
+                        alignItems={"center"}
+                        flexDirection={"column"}
+                        sx={{backgroundColor: "white"}}
+                        width={"400px"}
+                        borderRadius={"20px"}
+                        marginBottom={"7px"}
+                        padding={"7px"}
+                    >
+                        <TextField sx={{marginBottom: "7px"}} id="atacks" label="Атаки" multiline minRows={5} fullWidth/>
+                        <TextField sx={{marginBottom: "7px"}} id="features" label="Способности" multiline minRows={5} fullWidth/>
+                        <Box sx={{marginBottom: "7px"}} display={"flex"}>
+                            <TextField id="plat" type="number" label="ПМ"/>
+                            <TextField id="gold" type="number" label="ЗМ"/>
+                            <TextField id="silver" type="number" label="СМ"/>
+                            <TextField id="copper" type="number" label="ММ"/>
+                        </Box>
+                        <TextField id="inventory" label="Снаряжение" multiline minRows={9} fullWidth/>
+                    </Box>
             </Box>
         </Box>
 
