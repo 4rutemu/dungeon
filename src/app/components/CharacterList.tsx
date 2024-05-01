@@ -1,5 +1,6 @@
 'use client'
 
+import { Image } from "@mui/icons-material";
 import { Box, Checkbox, FormControlLabel, TextField, Typography } from "@mui/material";
 import { FunctionComponent, useState } from "react";
 
@@ -20,7 +21,7 @@ const StatCard: FunctionComponent<StatCardProps> = ({label, value}) => {
                     alignItems={"center"}
                     borderRadius={"20px"}
                     minWidth={"100%"}
-                    marginBottom={"5px"}
+                    marginBottom={"13px"}
                     sx={{backgroundColor: "white"}}
                 >
                     <Typography variant="body2">{label}</Typography>
@@ -150,8 +151,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                 display={"flex"}
                 flexDirection={"column"}
                 alignItems={"center"}
-                width={"15%"}
-                justifyContent={"space-between"}
+                width={"140px"}
                 borderRadius={"20px"}
                 sx={{backgroundColor: "gray"}}
                 padding={"10px 5px 5px 5px"}
@@ -197,6 +197,15 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
                     <Typography variant="body2">Спасброски</Typography>
                 </Box>
+                <Box
+                    component="img"
+                    marginTop={"60%"}
+                    sx={{
+                        height: 130,
+                        width: 140,
+                    }}
+                    src="images/Wiki.png"
+                />
             </Box>
             <Box marginLeft={"7px"}>
                 <Box 
@@ -256,7 +265,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                             <TextField id="silver" type="number" label="СМ"/>
                             <TextField id="copper" type="number" label="ММ"/>
                         </Box>
-                        <TextField id="inventory" label="Снаряжение" multiline minRows={9} fullWidth/>
+                        <TextField id="inventory" label="Снаряжение" multiline minRows={8} fullWidth/>
                     </Box>
             </Box>
         </Box>
