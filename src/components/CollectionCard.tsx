@@ -11,7 +11,15 @@ interface CollectionCardProps {
  
 const CollectionCard: FunctionComponent<CollectionCardProps> = ({id, level, clas, cname, race}) => {
     return ( 
-        <Card sx={{cursor: "pointer", backgroundColor: "#fafafa"}} variant="outlined">
+        <Card sx={
+            {
+                cursor: "pointer",
+                backgroundColor: "#fafafa",
+                '&:hover': {
+                    backgroundColor: "#f5f5f5"
+                }
+            }}
+             variant="outlined">
             <CardContent>
                 <Typography variant="h3">{cname}</Typography>
                 <Typography variant="body1">{race} {clas}</Typography>
