@@ -19,7 +19,8 @@ const CollectionCard: FunctionComponent<CollectionCardProps> = ({id, level, clas
                     backgroundColor: "#f5f5f5"
                 }
             }}
-             variant="outlined">
+            variant="outlined"
+        >
             <CardContent>
                 <Typography variant="h3">{cname}</Typography>
                 <Typography variant="body1">{race} {clas}</Typography>
