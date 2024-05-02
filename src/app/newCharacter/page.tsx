@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import CharacterList from "../components/CharacterList";
+import CharacterList from "../../components/CharacterList";
 
 interface NewCharacterProps {
     

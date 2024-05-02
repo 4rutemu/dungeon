@@ -3,7 +3,7 @@
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { FunctionComponent } from "react";
-import CollectionCard from "../components/CollectionCard";
+import CollectionCard from "../../components/CollectionCard";
 
 interface CollectionProps {
     
