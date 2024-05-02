@@ -1,6 +1,5 @@
 'use client'
 
-import { Image } from "@mui/icons-material";
 import { Box, Checkbox, FormControlLabel, TextField, Typography } from "@mui/material";
 import { FunctionComponent, useState } from "react";
 
@@ -99,12 +98,14 @@ const HealthCard: FunctionComponent<HealthCardProps> = () => {
 }
  
 const CharacterList: FunctionComponent<CharacterListProps> = () => {
-    return ( <Box padding={"0 20%"}>
-    {/* Шапка листа перса */}
+    return ( 
+    <Box margin={"0 27%"}>
+        {/* Шапка листа перса */}
         <Box
             display={"flex"}
             justifyContent={"space-evenly"}
             padding={"15px"}
+            width={"860px"}
         >
             <Box
                 display={"flex"}
