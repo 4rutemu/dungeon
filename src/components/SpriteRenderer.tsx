@@ -1,6 +1,7 @@
 'use client'
 
 import { Box } from "@mui/material";
+import { blue, purple } from "@mui/material/colors";
 import { FunctionComponent } from "react";
 
 interface SpriteRendererProps {
@@ -13,6 +14,9 @@ const SpriteRenderer: FunctionComponent<SpriteRendererProps> = ({imagePath, sele
     return ( <Box 
             component={"img"}
             src={imagePath} 
+            width= {'1.5rem'}
+            height= {'1.5rem'}
+            borderColor={blue[400]}
             sx={{border: () => imagePath === selectedImage ? 2 : 0}}
             onClick={() => onImageClick(imagePath)}
         ></Box> 

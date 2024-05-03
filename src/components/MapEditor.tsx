@@ -4,6 +4,7 @@ import { FunctionComponent, useState } from "react";
 import MapContainer from "./MapContainer";
 import { Box, Button, Input, Typography } from "@mui/material";
 import SpritePicker from "./SpritePicker";
+import { imagePaths } from "@/utils/imagePaths";
 
 interface MapEditorProps {
     
@@ -15,7 +16,7 @@ const MapEditor: FunctionComponent<MapEditorProps> = () => {
   const [hideOptions, setHideOptions] = useState(false);
   const [hideDrawingPanel, setHideDrawingPanel] = useState(true);
   const [buttonText, setButtonText] = useState("start drawing");
-  const [selectedColor, setColor] = useState("#f44336");
+  const [selectedColor, setColor] = useState(imagePaths.haha);
 
   function initializeDrawingPanel() {
     setHideOptions(!hideOptions);
