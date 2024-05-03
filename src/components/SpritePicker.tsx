@@ -13,7 +13,12 @@ interface SpritePickerProps {
 const SpritePicker: FunctionComponent<SpritePickerProps> = ({color, onChangeComplete}) => {
     return ( 
         <Box>
-            {Object.values(imagePaths).map((sprite, index) => <SpriteRenderer key={index} imagePath={sprite as string} selectedImage={color}></SpriteRenderer>)}
+            {Object.values(imagePaths).map((sprite, index) => <SpriteRenderer 
+            key={index} 
+            imagePath={sprite as string} 
+            selectedImage={color}
+            onImageClick={onChangeComplete}
+            />)}
         </Box>
     );
 }
