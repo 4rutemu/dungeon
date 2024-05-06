@@ -99,7 +99,11 @@ const HealthCard: FunctionComponent<HealthCardProps> = () => {
  
 const CharacterList: FunctionComponent<CharacterListProps> = () => {
     return ( 
-    <Box margin={"0 27%"}>
+    <Box 
+        display={"flex"}
+        alignItems={"center"}
+        flexDirection={"column"}
+    >
         {/* Шапка листа перса */}
         <Box
             display={"flex"}

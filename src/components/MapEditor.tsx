@@ -11,7 +11,7 @@ interface MapEditorProps {
 }
  
 const MapEditor: FunctionComponent<MapEditorProps> = () => {
-    const [panelWidth, setPanelWidth] = useState(16);
+  const [panelWidth, setPanelWidth] = useState(16);
   const [panelHeight, setPanelHeight] = useState(16);
   const [hideOptions, setHideOptions] = useState(false);
   const [hideDrawingPanel, setHideDrawingPanel] = useState(true);
@@ -32,7 +32,15 @@ const MapEditor: FunctionComponent<MapEditorProps> = () => {
   }
 
   return (
-    <Box id="editor">
+    <Box id="editor" 
+      border="1px solid red"
+      border-radius="0.25rem"
+      padding="1rem 4rem 2rem 4rem"
+      margin-top="2rem"
+      display="flex"
+      flexDirection={"column"}
+      alignItems="center"
+    >
       <Typography>Pixel Editor</Typography>
       {hideDrawingPanel && <h2>Enter Panel Dimensions</h2>}
       {hideDrawingPanel && (
