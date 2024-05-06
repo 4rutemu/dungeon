@@ -176,7 +176,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     borderRadius={"20px"}
                     width={"140px"}
                     sx={{backgroundColor: "gray"}}
-                    padding={"10px 5px 5px 5px"}
+                    padding={"5px 5px 10px 5px"}
                     marginBottom={"7px"}
                 >
                     <FormControlLabel label="Вдохновение" sx={{marginLeft: "7px"}} control={
