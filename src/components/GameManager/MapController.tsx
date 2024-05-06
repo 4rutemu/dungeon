@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { FunctionComponent } from "react";
 
 interface MapControllerProps {
@@ -5,7 +6,12 @@ interface MapControllerProps {
 }
  
 const MapController: FunctionComponent<MapControllerProps> = () => {
-    return ( <></> );
+    return ( <>
+        <Box
+            component={"img"}
+            src={"/images/map.png"}
+        />
+    </> );
 }
  
 export default MapController;
