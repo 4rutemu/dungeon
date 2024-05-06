@@ -3,7 +3,7 @@
 import { Box } from "@mui/material";
 import { FunctionComponent } from "react";
 import SpriteRenderer from "./SpriteRenderer";
-import {imagePaths} from "../utils/imagePaths"
+import {imagePaths} from "../../utils/imagePaths"
 
 interface SpritePickerProps {
     color: string,

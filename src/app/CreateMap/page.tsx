@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import MapEditor from "../../components/MapEditor";
+import MapEditor from "../../components/MapEditor/MapEditor";
 
 interface CreateMapProps {
     
