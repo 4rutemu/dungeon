@@ -16,7 +16,7 @@ const MapEditor: FunctionComponent<MapEditorProps> = () => {
   const [hideOptions, setHideOptions] = useState(false);
   const [hideDrawingPanel, setHideDrawingPanel] = useState(true);
   const [buttonText, setButtonText] = useState("start drawing");
-  const [selectedColor, setColor] = useState(imagePaths.haha);
+  const [selectedColor, setColor] = useState(imagePaths.grass);
 
   function initializeDrawingPanel() {
     setHideOptions(!hideOptions);

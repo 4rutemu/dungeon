@@ -33,12 +33,14 @@ const GameManager: FunctionComponent<GameManagerProps> = () => {
      flexDirection={"row"}
      alignItems={"center"}
      justifyContent={"center"}
+     height={"100%"}
+     width={"100%"}
     >
-        <Box width={"70%"}>
-            <MapController/>
+        <Box width={"80%"}>
+            <MapController imageSrc="images/ForestEncampment_digital_day_grid.jpg"/>
         </Box>
         <Box 
-            width={"30%"}
+            width={"20%"}
             display={"flex"}
             alignItems={"center"}
             flexDirection={"column"}

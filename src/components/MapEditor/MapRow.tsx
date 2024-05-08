@@ -2,6 +2,7 @@
 
 import { FunctionComponent } from "react";
 import MapCell from "./MapCell";
+import { Box } from "@mui/material";
 
 interface MapRowProps {
     width: number,
@@ -17,7 +18,7 @@ const MapRow: FunctionComponent<MapRowProps> = (props) => {
       pixels.push(<MapCell key={i} selectedColor={selectedColor} />);
     }
   
-    return <div className="row">{pixels}</div>;
+    return <Box className="row" height={"32px"}>{pixels}</Box>;
 }
  
 export default MapRow;

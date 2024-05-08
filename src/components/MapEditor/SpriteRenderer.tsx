@@ -14,8 +14,8 @@ const SpriteRenderer: FunctionComponent<SpriteRendererProps> = ({imagePath, sele
     return ( <Box 
             component={"img"}
             src={imagePath} 
-            width= {'1.5rem'}
-            height= {'1.5rem'}
+            width= {'2rem'}
+            height= {'2rem'}
             borderColor={blue[400]}
             sx={{border: () => imagePath === selectedImage ? 2 : 0}}
             onClick={() => onImageClick(imagePath)}

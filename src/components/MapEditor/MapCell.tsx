@@ -1,5 +1,6 @@
 'use client'
 
+import { imagePaths } from "@/utils/imagePaths";
 import { Box } from "@mui/material";
 import { FunctionComponent, useState } from "react";
 
@@ -10,7 +11,7 @@ interface MapCellProps {
 const MapCell: FunctionComponent<MapCellProps> = (props) => {
     const { selectedColor } = props;
 
-    const [pixelColor, setPixelColor] = useState("haha");//TODO: Добавить картинку пустого поля
+    const [pixelColor, setPixelColor] = useState(imagePaths.grass);//TODO: Добавить картинку пустого поля
     const [oldColor, setOldColor] = useState(pixelColor);
     const [canChangeColor, setCanChangeColor] = useState(true);
   
@@ -39,8 +40,8 @@ const MapCell: FunctionComponent<MapCellProps> = (props) => {
         onClick={applyColor}
         onMouseEnter={changeColorOnHover}
         onMouseLeave={resetColor}
-        width= {'1.5rem'}
-        height= {'1.5rem'}
+        width= {'2rem'}
+        height= {'2rem'}
         src={pixelColor}
       ></Box>
     );
