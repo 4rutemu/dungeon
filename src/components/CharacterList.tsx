@@ -174,7 +174,7 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                     flexDirection={"column"}
                     alignItems={"center"}
                     borderRadius={"20px"}
-                    width={"140px"}
+                    width={"200px"}
                     sx={{backgroundColor: "gray"}}
                     padding={"5px 5px 10px 5px"}
                     marginBottom={"7px"}
@@ -188,19 +188,19 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                 <Box 
                     display={"flex"}
                     flexDirection={"column"}
-                    alignItems={"center"}
+                    alignItems={"left"}
                     borderRadius={"20px"}
-                    width={"140px"}
+                    width={"200px"}
                     sx={{backgroundColor: "gray"}}
                     padding={"10px 5px 5px 5px"}
                 >
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <Typography variant="body2">Спасброски</Typography>
+                    <SpecialisationCard label="Сила" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Ловкость" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Телосложение" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Интеллект" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Мудрость" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Харизма" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <Typography align="center" variant="body2">Спасброски</Typography>
                 </Box>
                 <Box
                     component="img"
@@ -216,31 +216,31 @@ const CharacterList: FunctionComponent<CharacterListProps> = () => {
                 <Box 
                     display={"flex"}
                     flexDirection={"column"}
-                    alignItems={"center"}
+                    alignItems={"left"}
                     borderRadius={"20px"}
-                    width={"140px"}
+                    width={"240px"}
                     sx={{backgroundColor: "gray"}}
                     padding={"10px 5px 5px 5px"}
                 >
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <SpecialisationCard label="haha" masteryBonus={1} statBonus={1}></SpecialisationCard>
-                    <Typography variant="body2">Навыки</Typography>
+                    <SpecialisationCard label="Акробатика" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Анализ" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Атлетика" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Восприятие" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Выживание" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Выступление" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Запугивание" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="История" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Ловкость рук" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Магия" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Медицина" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Обман" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Природа" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Проницательность" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Религия" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Скрытность" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Убеждение" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <SpecialisationCard label="Уход за животными" masteryBonus={1} statBonus={1}></SpecialisationCard>
+                    <Typography align="center" variant="body2">Навыки</Typography>
                 </Box>
             </Box>
             <Box marginLeft={"7px"}

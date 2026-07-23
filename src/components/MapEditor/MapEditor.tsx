@@ -11,7 +11,7 @@ interface MapEditorProps {
 }
  
 const MapEditor: FunctionComponent<MapEditorProps> = () => {
-  const [panelWidth, setPanelWidth] = useState(16);
+  const [panelWidth, setPanelWidth] = useState(30);
   const [panelHeight, setPanelHeight] = useState(16);
   const [hideOptions, setHideOptions] = useState(false);
   const [hideDrawingPanel, setHideDrawingPanel] = useState(true);

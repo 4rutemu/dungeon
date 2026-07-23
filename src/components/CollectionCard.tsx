@@ -24,7 +24,7 @@ const CollectionCard: FunctionComponent<CollectionCardProps> = ({id, level, clas
             <CardContent>
                 <Typography variant="h3">{cname}</Typography>
                 <Typography variant="body1">{race} {clas}</Typography>
-                <Typography variant="body1">{level}</Typography>
+                <Typography variant="body1">{level} уровень</Typography>
             </CardContent>
         </Card>
     );
